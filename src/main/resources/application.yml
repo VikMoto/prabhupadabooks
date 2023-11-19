@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    username: damodara
+    url: jdbc:postgresql://localhost:5437/book_db
+    password: novelBhVedanta
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+    show-sql: false
+
+  mail:
+    host: smtp-mail.outlook.com
+    port: 587
+    username: senkoShop@outlook.com
+    password: Midostar10035
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8084
+
